@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif
+}
+
+body {
+    background-image: url('galeria/Fondo_dragon_ball.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#contenedor_principal{
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap;     */
+
+}
+
+.imagenes {
+    height: 350px;
+    width: 300px;
+    padding: 3em;
+}
+
+.tarjetas {
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 2% 2%;
+    background-color: #ECFEFF;
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.nombres {
+    text-align: center;
+    padding: 2%;
+}
+
+.parrafos {
+    margin: 1% 8%;
+    font-size: 0.5rem;
+}
+
+.botones {
+    font-size: 18px;
+    margin: 2% 0%;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+}
+
+#div_androide18 {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9)
+}
+
+#div_androide19 {
+    background: linear-gradient(to bottom, #a6b0dd, #5d2297);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9)
+}
+
+#div_androide16 {
+    background: linear-gradient(#ff9a9e 0%,#fecfef 50%, #fecfef 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9)
+}
+
+#div_androide17 {
+    background: radial-gradient(ellipse,rgba(255, 107, 107, 0.8), rgba(78, 205, 196, 0.8));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.9)
+}
+
