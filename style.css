@@ -105,3 +105,89 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.9)
 }
 
+/* Modifica la galería de Goku que se adapte con columnas variables. */
+#contenedor_principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Integra un formulario que se reorganice visualmente según el dispositivo. */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #4ecdc4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3bb8a0;
+}
+
+/* Simula un diseño de tarjeta que se apile en móviles y se alinee en escritorio. */
+@media (min-width: 768px) {
+    #contenedor_principal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ /* Establece estilos para impresión usando media queries.  */
+@media print {
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+    }
+    .tarjetas {
+        border: none;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+    .imagenes {
+        max-width: 100%;
+        height: auto;
+    }
+    .botones {
+        display: none;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+/* Usa imagen distinta según el tamaño de la pantalla.  */
+@media (max-width: 600px) {
+    body {
+        background-image: url('galeria/goku-viendo-paisaje.jpg');
+    }
+    form {
+        padding: 10px;
+    }
+    input, button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
